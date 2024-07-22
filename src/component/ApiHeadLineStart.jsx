@@ -10,7 +10,11 @@ import axios from "axios";
               country: 'us',
               category: '',
             },
+            headers: {
+              'Upgrade': 'HTTP/2.0' // เพิ่ม header สำหรับการอัปเกรด
+            }
           },
+          
         );
         //console.log(respons)
         //console.log(respons.data)
